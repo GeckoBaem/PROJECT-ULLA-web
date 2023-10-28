@@ -1,0 +1,9 @@
+@keyframes show-up {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
