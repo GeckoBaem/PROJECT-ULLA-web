@@ -1,5 +1,5 @@
 :root {
-    --nav-color: #202020aa;
+    --nav-color: #202020f9;
     --body-color: #181818;
     --sub-color: #2d68ff;
 }
@@ -9,8 +9,8 @@
 
     padding: 0;
     
+    font-family: "Pretendard";
     font-size: 16px;
-    font-family: "NeoDunggeunmo";
 
     user-select: none;
 }
@@ -26,13 +26,26 @@ ion-icon {
     padding: 0 22px;
 }
 
-body {
-    position: relative;
+html {
+    width: 100%;
+    height: 100%;
+}
 
-    width: 100vw;
-    height: 200vh;
+body {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 2300px;
 
     background: var(--body-color);
+
+    animation: to-metaverse linear both;
+    animation-timeline: scroll(root); 
 }
 
 header {
@@ -43,18 +56,19 @@ header {
     top: 0;
 
     width: 100%;
-    height: 40px;
-    padding: 16px 0;
+    height: 65px;
 
     background: #00000000;
 
-    transition: .4s;
+    transition: background-color .4s;
 }
 
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    max-width: 416px;
 }
 
 .logo {
@@ -62,14 +76,17 @@ header {
     justify-content: center;
     align-items: center;
 
+    position: relative;
+    z-index: 200;
+    
     width: 40px;
     height: 40px;
     margin-right: 20px;
 }
 
 .logo img {
-    width: 40px;
-    height: calc(40px * 252 / 278);
+    width: 35px;
+    height: calc(35px * 252 / 278);
 }
 
 .header-buttons {
@@ -95,6 +112,9 @@ header {
     align-items: center;
     gap: 6px;
 
+    position: relative;
+    z-index: 200;
+
     width: 32px;
     height: 32px;
 
@@ -108,4 +128,175 @@ header {
     background: #cccccc;
     border: none;
     border-radius: 25px;
+
+    transition: transform .2s, width .2s;
+}
+
+.menu {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 199;
+
+    width: 100vw;
+    height: 100vh;
+    padding-top: 120px;
+
+    background: #262626;
+}
+
+.header-button-menu.opened + .menu {
+    display: inline-block;
+}
+
+main {
+    width: 412px;
+    height: 100%;
+
+    padding-top: 120px;
+    margin: 0 25px;
+
+    font-family: "Pretendard";
+    font-weight: 200;
+    color: white;
+}
+
+.introduce {
+    text-transform: uppercase;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    height: 991px;
+
+    animation: fade linear both;
+    animation-timeline: scroll(root);
+    animation-range: contain 0 exit 50%;
+}
+
+.introduce hr {
+    width: 300px;
+    height: 2px;
+    margin-bottom: 25px;
+    
+    background-color: var(--sub-color);
+    border: none;
+}
+
+.introduce .explanation {
+    margin-bottom: 15px;
+
+    font-size: 33px;
+    line-height: 40px;
+}
+
+.project-name {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    z-index: -1;
+
+    margin-top: 200px;
+}
+
+.icon ion-icon {
+    font-size: 45px;
+
+    animation: show-out linear both;
+    animation-timeline: view(block);
+    animation-range: cover 50% exit -20%;
+}
+
+.metaverse {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: -999;
+    
+    margin-top: 230px;
+}
+
+.minecraft {
+    position: relative;
+    z-index: -999;
+}
+
+.metaverse img,
+.minecraft img {
+
+    width: 100%;
+
+    border-radius: 10px;
+
+    opacity: 0;
+    transform: translateY(50%);
+    
+    animation: show-up linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% cover 20%;
+}
+
+.title {
+    margin-top: 30px;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    line-height: 45px;
+}
+
+.explanation {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 15px;
+
+    max-width: 352px;
+    margin-top: 50px;
+    
+    font-size: 17px;
+    color: #eaeaea;
+}
+
+.sentence {
+    opacity: 0;
+    transform: translateY(50%);
+
+    animation: show-up linear both;
+    animation-timeline: view(block);
+    animation-range: entry 0% cover 20%;
+}
+
+.english {
+    font-size: 9px;
+}
+
+strong {
+    font-weight: 500;
+    color: white;
+}
+
+.minecraft {
+    margin-top: 200px;
 }

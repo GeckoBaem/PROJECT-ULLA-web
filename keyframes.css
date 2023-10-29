@@ -1,9 +1,50 @@
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes to-metaverse {
+    exit 30% {
+        background: var(--body-color);
+    }
+
+    exit 50% {
+        background: #1f1c19;
+    }
+
+    exit 70% {
+        background: #1f1c19;
+    }
+
+    exit 100% {
+        background: #1a2317;
+    }
+}
+
 @keyframes show-up {
     from {
         opacity: 0;
+        transform: translateY(50%);
     }
 
     to {
         opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes show-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-200%);
     }
 }
