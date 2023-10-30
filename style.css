@@ -216,7 +216,7 @@ main {
     position: relative;
     z-index: -1;
 
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 .icon ion-icon {
@@ -230,7 +230,7 @@ main {
 .metaverse {
     display: flex;
     flex-direction: column;
-
+    
     position: relative;
     z-index: -999;
     
@@ -238,6 +238,9 @@ main {
 }
 
 .minecraft {
+    display: flex;
+    flex-direction: column;
+
     position: relative;
     z-index: -999;
 }
@@ -252,9 +255,9 @@ main {
     opacity: 0;
     transform: translateY(50%);
     
-    animation: show-up linear both;
+    animation: show linear both;
     animation-timeline: view(block);
-    animation-range: entry 0% cover 20%;
+    /* animation-range: entry 0% cover 20%; */
 }
 
 .title {
@@ -283,9 +286,9 @@ main {
     opacity: 0;
     transform: translateY(50%);
 
-    animation: show-up linear both;
+    animation: show linear both;
     animation-timeline: view(block);
-    animation-range: entry 0% cover 20%;
+    /* animation-range: entry 0% cover 20%; */
 }
 
 .english {
