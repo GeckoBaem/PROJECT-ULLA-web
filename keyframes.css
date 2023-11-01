@@ -9,20 +9,32 @@
 }
 
 @keyframes to-metaverse {
-    exit 30% {
+    exit 5% {
         background: var(--body-color);
     }
 
-    exit 50% {
-        background: #1f1c19;
+    exit 13% {
+        background: #2f251a;
     }
 
-    exit 70% {
-        background: #1f1c19;
+    exit 20% {
+        background: #2f251a;
     }
 
-    exit 100% {
+    exit 30% {
         background: #1a2317;
+    }
+
+    exit 45% {
+        background: #181818;
+    }
+
+    exit 74% {
+        background: #181818;
+    }
+
+    exit 77% {
+        background: #2d68ff;
     }
 }
 
@@ -63,5 +75,40 @@
     to {
         opacity: 0;
         transform: translateY(-200%);
+    }
+}
+
+@keyframes intro {
+    20% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+}
+
+@keyframes project-ulla-intro-color {
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+        background: #2d68ff;
+    }
+
+    90% {
+        opacity: 1;
+        background: #2d68ff;
+    }
+    
+    100% {
+        opacity: 0;
     }
 }

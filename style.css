@@ -34,18 +34,18 @@ html {
 body {
     display: flex;
     justify-content: center;
-
+    
     position: relative;
     left: 0;
     top: 0;
-
+    
     width: 100%;
-    height: 2300px;
-
+    height: 9000px;
+    /* height: 2500px; */
+    
     background: var(--body-color);
-
     animation: to-metaverse linear both;
-    animation-timeline: scroll(root); 
+    animation-timeline: scroll(nearest); 
 }
 
 header {
@@ -141,10 +141,60 @@ header {
     z-index: 199;
 
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     padding-top: 120px;
 
-    background: #262626;
+    background: #282828;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    position: relative;
+
+
+    margin: 20px 0 10px 0;
+    width: calc(100vw - 20px);
+    height: 100px;
+}
+
+.menu-button:active {
+    background-color: #505050;
+}
+
+.menu-button ion-icon {
+    color: #ffffff;
+
+    position: relative;
+    left: 20px;
+}
+
+.menu-button span {
+    font-family: pretendard;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    
+    position: relative;
+    left: 40px;
+}
+
+.menu-inside img {
+    margin-top: 80px;
+    height: 60px;
+
+    position: relative;
+    left: -10px;
 }
 
 .header-button-menu.opened + .menu {
@@ -230,7 +280,7 @@ main {
 .metaverse {
     display: flex;
     flex-direction: column;
-    
+
     position: relative;
     z-index: -999;
     
@@ -243,10 +293,13 @@ main {
 
     position: relative;
     z-index: -999;
+
+    margin-top: 200px;
 }
 
 .metaverse img,
-.minecraft img {
+.minecraft img,
+.what-is-ulla img {
 
     width: 100%;
 
@@ -257,6 +310,10 @@ main {
     
     animation: show linear both;
     animation-timeline: view(block);
+
+    box-shadow: 0px 8px 10px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 8px 10px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 8px 10px 5px rgba(0,0,0,0.3);
     /* animation-range: entry 0% cover 20%; */
 }
 
@@ -300,6 +357,34 @@ strong {
     color: white;
 }
 
-.minecraft {
-    margin-top: 200px;
+.intro-ulla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-ulla-text{
+    margin-bottom: 750px;
+    top: 50%;
+    position: sticky;
+    
+    font-weight: 700;
+    font-size: 40px;
+
+    animation: intro ease-in-out both;
+    /* animation-timeline: scroll(nearest); */
+    animation-range: contain 0 exit 50%;
+    animation-timeline: view(block);
+    /* animation-range: entry-crossing 0% exit 100%; */
+    z-index: -999;
+
+    opacity: 0;
+}
+
+.what-is-ulla {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: -999;
 }

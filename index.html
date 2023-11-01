@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- import google-fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- import ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -20,7 +22,8 @@
 
     <title>PROJECT-ULLA</title>
 </head>
-<body>
+
+<body id="body">
     <header>
         <div class="header-container container">
             <div class="logo" onclick="gotoTop()">
@@ -33,7 +36,21 @@
                     <hr>
                 </div>
                 <div class="menu">
-
+                    <div class="menu-inside">
+                        <div class="menu-button" onclick="location.href='https://ulleung.go.kr/tour/index.do'">
+                            <ion-icon name="earth-outline"></ion-icon>
+                            <span>Ulleung-do Homepage</span>
+                        </div>
+                        <div class="menu-button" onclick="alert('파일이 아직 준비되지 않았습니다.')">
+                            <ion-icon name="download-outline"></ion-icon>
+                            <span>Map Download</span>
+                        </div>
+                        <div class="menu-button" onclick="location.href='https://ko.wikipedia.org/wiki/울릉도'">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                            <span>About Ulleung</span>
+                        </div>
+                        <img src="assets/project-ulla.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,14 +86,14 @@
                     사람들과 상호작용 하고 창작하는 디지털 세계를<br>가리키는 개념입니다.
                 </div>
                 <div class="sentence">
-                    메타버스는 <strong>가상현실</strong><span class="english">(Virtual Reality)</span>, 
-                    <strong>확장현실</strong><span class="english">(Augmented Reality)</span>, 3D 월드, 온라인 게임, 소셜 미디어, 가상세계, 
+                    메타버스는 <strong>가상현실</strong><span class="english">(Virtual Reality)</span>,
+                    <strong>확장현실</strong><span class="english">(Augmented Reality)</span>, 3D 월드, 온라인 게임, 소셜 미디어, 가상세계,
                     사이버 공간 등 다양한
                     디지털 기술과 플랫폼을 통합하여 구성됩니다.
                 </div>
                 <div class="sentence">
                     이러한 환경은 사용자들이 <strong>가상으로 활동하고<br>
-                    상호작용</strong>하며, 실제 세계와는 다른 규칙과 경험을
+                        상호작용</strong>하며, 실제 세계와는 다른 규칙과 경험을
                     제공합니다.
                 </div>
             </div>
@@ -94,15 +111,57 @@
                     사람들과 상호작용 하고 창작하는 디지털 세계를<br>가리키는 개념입니다.
                 </div>
                 <div class="sentence">
-                    메타버스는 <strong>가상현실</strong><span class="english">(Virtual Reality)</span>, 
-                    <strong>확장현실</strong><span class="english">(Augmented Reality)</span>, 3D 월드, 온라인 게임, 소셜 미디어, 가상세계, 
+                    메타버스는 <strong>가상현실</strong><span class="english">(Virtual Reality)</span>,
+                    <strong>확장현실</strong><span class="english">(Augmented Reality)</span>, 3D 월드, 온라인 게임, 소셜 미디어, 가상세계,
                     사이버 공간 등 다양한
                     디지털 기술과 플랫폼을 통합하여 구성됩니다.
                 </div>
                 <div class="sentence">
                     이러한 환경은 사용자들이 <strong>가상으로 활동하고<br>
-                    상호작용</strong>하며, 실제 세계와는 다른 규칙과 경험을
+                        상호작용</strong>하며, 실제 세계와는 다른 규칙과 경험을
                     제공합니다.
+                </div>
+            </div>
+        </div>
+        <div class="intro-ulla">
+            <div class="icon">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </div>
+            <span class="intro-ulla-text">
+                그럼 소개합니다,
+            </span>
+            <span class="intro-ulla-text">
+                울릉도 메타버스
+            </span>
+            <span class="intro-ulla-text">
+                PROJECT : ULLA
+                <div class="icon">
+                    <ion-icon name="chevron-up-outline"></ion-icon>
+                </div>
+            </span>
+            <div class="icon">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </div>
+            <span class="intro-ulla-text" />
+        </div>
+        <div class="what-is-ulla">
+            <img src="assets/introduce-ulla.png">
+            <div class="title">
+                PROJECT :<br>
+                ULLA
+            </div>
+            <div class="explanation">
+                <div class="sentence">
+                    <strong>PROJECT : ULLA</strong>는 <strong>Minecraft</strong>를 
+                    <br>이용하여 울릉도의 아름다운 여러 면모의 모습을 
+                    <br>구현하는 것입니다.
+                </div>
+                <div class="sentence">
+                <strong>PROJECT : ULLA</strong>가 구현이 완료된 이후에는 서버를 
+                <br>개설하여 메타버스 내에 입장할 수 있는 환경을 제공하고
+                방문객들이 이곳에 구현되어 있는 다양한 컨텐츠를 
+                <br>즐김으로써 사람들의 울릉도에 대한 관심을 
+                <br>가지게 합니다.
                 </div>
             </div>
         </div>
@@ -111,4 +170,5 @@
     <!-- import javascript -->
     <script src="index.js"></script>
 </body>
+
 </html>
