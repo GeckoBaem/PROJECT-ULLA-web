@@ -40,7 +40,7 @@ body {
     top: 0;
     
     width: 100%;
-    height: 9000px;
+    height: 15000px;
     /* height: 2500px; */
     
     background: var(--body-color);
@@ -165,7 +165,7 @@ header {
 
     margin: 20px 0 10px 0;
     width: calc(100vw - 20px);
-    height: 100px;
+    height: 50px;
 }
 
 .menu-button:active {
@@ -187,14 +187,6 @@ header {
     
     position: relative;
     left: 40px;
-}
-
-.menu-inside img {
-    margin-top: 80px;
-    height: 60px;
-
-    position: relative;
-    left: -10px;
 }
 
 .header-button-menu.opened + .menu {
@@ -299,7 +291,9 @@ main {
 
 .metaverse img,
 .minecraft img,
-.what-is-ulla img {
+.what-is-ulla img,
+.example-reality img,
+.example-video video {
 
     width: 100%;
 
@@ -312,8 +306,6 @@ main {
     animation-timeline: view(block);
 
     box-shadow: 0px 8px 10px 5px rgba(0,0,0,0.3);
-    -webkit-box-shadow: 0px 8px 10px 5px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 8px 10px 5px rgba(0,0,0,0.3);
     /* animation-range: entry 0% cover 20%; */
 }
 
@@ -381,10 +373,91 @@ strong {
     opacity: 0;
 }
 
-.what-is-ulla {
+.part-title {
+    text-align: center;
+    margin-top: 30px;
+
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 900;
+
+    line-height: 45px;
+    margin-top: 300px;
+
+    opacity: 0;
+    transform: translateY(50%);
+    
+    animation: showing ease both;
+    animation-timeline: view(block);
+    animation-range: cover 10% cover 50%;
+
+    position: relative;
+    z-index: -199;
+
+    text-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+}
+
+.what-is-ulla,
+.example-reality,
+.example-video,
+.advantages {
     display: flex;
     flex-direction: column;
 
     position: relative;
     z-index: -999;
 }
+
+.example-reality {
+    margin-top: 100px;
+}
+
+.example-video {
+    margin-top: 200px;
+}
+
+.clrcle-image {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    animation: showing ease both;
+    animation-timeline: view(block);
+    animation-range: cover 10% cover 50%;
+
+    box-shadow: 0px 8px 10px 5px rgba(0,0,0,0.3);
+
+    position: relative;
+    left: 22%;
+    margin-top: 100px;
+}
+
+.mid-title {
+    text-align: center;
+    margin-top: 30px;
+
+    font-size: 45px;
+    font-weight: 700;
+
+    line-height: 45px;
+
+    animation: showing ease both;
+    animation-timeline: view(block);
+    animation-range: cover 10% cover 50%;
+}
+
+.mid-sentence {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50%);
+
+    animation: show linear both;
+    animation-timeline: view(block);
+}
+
+
+
+
+
+
