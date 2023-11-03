@@ -9,32 +9,100 @@
 }
 
 @keyframes to-metaverse {
-    exit 5% {
+    exit 2% {
         background: var(--body-color);
     }
 
-    exit 13% {
+    exit 5% {
         background: #2f251a;
     }
 
-    exit 20% {
+    exit 8% {
         background: #2f251a;
     }
 
-    exit 30% {
+    exit 12% {
         background: #1a2317;
     }
 
-    exit 45% {
+    exit 15% {
         background: #181818;
     }
 
-    exit 74% {
+    exit 17% {
         background: #181818;
     }
 
-    exit 77% {
+    exit 27% {
+        background: #181818;
+    }
+
+    exit 29% {
         background: #2d68ff;
+    }
+
+    exit 35% {
+        background: #181818;
+    }
+
+    exit 42% {
+        background: #181818;
+    }
+
+    exit 45% {
+        background: #222d40;
+    }
+
+    exit 47% {
+        background: #222d40;
+    }
+
+    exit 49% {
+        background: #181818;
+    }
+
+    exit 52% {
+        background: #181818;
+    }
+
+    exit 57% {
+        background: #27202d;
+    }
+
+    exit 59% {
+        background: #27202d;
+    }
+
+    exit 61% {
+        background: #181818;
+    }
+
+    exit 76% {
+        background: #181818;
+    }
+
+    exit 79% {
+        background: #28475b;
+    }
+
+    exit 83% {
+        background: #413c2f;
+    }
+
+    exit 87% {
+        background: #413c2f;
+    }
+
+    exit 89% {
+        background: #3e3045;
+    }
+    
+    exit 93% {
+        background: #181818;
+    }
+
+    exit 96% {
+        background: #324530;
     }
 }
 
